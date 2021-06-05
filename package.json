@@ -1,8 +1,9 @@
 {
   "name": "react-typescript-babel-webpack",
   "version": "1.0.0",
-  "main": "./src/main.js",
+  "main": "./src/Index.tsx",
   "license": "MIT",
+  "check-type": "tsc -w",
   "scripts": {
     "dev": "webpack serve --mode development --open --hot",
     "build": "webpack --mode production --progress --hide-modules"
@@ -17,9 +18,13 @@
     "@babel/plugin-proposal-object-rest-spread": "^7.14.4",
     "@babel/preset-env": "^7.14.4",
     "@babel/preset-react": "^7.13.13",
+    "@babel/preset-typescript": "^7.13.0",
+    "@types/react": "^17.0.9",
+    "@types/react-dom": "^17.0.6",
     "babel-loader": "^8.2.2",
     "core-js": "^3.13.1",
     "regenerator-runtime": "^0.13.7",
+    "typescript": "^4.3.2",
     "webpack": "^5.38.1",
     "webpack-cli": "^4.7.0",
     "webpack-dev-server": "^3.11.2"
